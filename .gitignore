@@ -18,6 +18,9 @@ build/
 # Logs
 *.log
 
+# Heartbeat state
+data/heartbeat-state.json
+
 # OS files
 .DS_Store
 Thumbs.db

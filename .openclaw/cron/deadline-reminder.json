@@ -1,0 +1,19 @@
+{
+  "name": "Deadline Reminder",
+  "description": "Daily reminder of hackathon deadline and submission status",
+  "schedule": "0 9,17 * * *",
+  "timezone": "America/New_York",
+  "enabled": true,
+  "command": {
+    "type": "agent_task",
+    "prompt": "Check the hackathon deadline (Feb 12, 2026 at 12:00 PM EST). Calculate days/hours remaining. Check our project status - is it still in draft or submitted? If we're getting close to the deadline and haven't submitted, remind me and suggest what needs to be completed before submission."
+  },
+  "notifications": {
+    "onError": false,
+    "onSuccess": false,
+    "channels": ["slack"]
+  },
+  "conditions": {
+    "before_date": "2026-02-12T17:00:00Z"
+  }
+}

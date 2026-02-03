@@ -1,0 +1,22 @@
+{
+  "name": "Skill Version Check",
+  "description": "Check for updates to the hackathon skill file every 6 hours",
+  "schedule": "0 */6 * * *",
+  "timezone": "America/New_York",
+  "enabled": true,
+  "command": {
+    "type": "web_fetch",
+    "url": "https://colosseum.com/skill.md",
+    "extract": "version",
+    "compare_with": "1.5.2",
+    "on_change": {
+      "type": "agent_task",
+      "prompt": "The hackathon skill file has been updated to a new version. Fetch the full file and review what changed. Alert me to any important updates to endpoints, requirements, or deadlines."
+    }
+  },
+  "notifications": {
+    "onError": true,
+    "onSuccess": false,
+    "channels": ["slack"]
+  }
+}

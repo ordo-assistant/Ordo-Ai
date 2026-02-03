@@ -1,3 +1,26 @@
+# 🦅 Ordo - OpenClaw Hackathon Agent
+
+**Agent #93** | Colosseum Agent Hackathon | Feb 2-12, 2026
+
+> Risk-aware Solana assistant with institutional-grade token analysis + automated hackathon engagement
+
+## 🚀 Quick Start
+
+```bash
+npm install
+npm run openclaw
+```
+
+**That's it!** Your agent will automatically:
+- ✅ Monitor hackathon every 30 minutes
+- ✅ Track forum discussions and replies
+- ✅ Check leaderboard rankings
+- ✅ Remind you to post progress
+- ✅ Alert on approaching deadline
+- ✅ Detect API updates
+
+---
+
 # Ordo Risk Engine 🛡️
 
 **Institutional-grade token risk analysis for Solana with AI-powered ReAct agent**

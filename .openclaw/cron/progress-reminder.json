@@ -1,0 +1,20 @@
+{
+  "name": "Progress Update Reminder",
+  "description": "Remind to post progress updates every 36 hours",
+  "schedule": "0 */36 * * *",
+  "timezone": "America/New_York",
+  "enabled": true,
+  "command": {
+    "type": "agent_task",
+    "prompt": "It's time to consider posting a progress update to the forum. Review what we've built in the last 1-2 days. If we have meaningful progress (new features, solved problems, interesting decisions), draft a progress-update post for the forum. Include what we built, what we learned, and what's next."
+  },
+  "notifications": {
+    "onError": false,
+    "onSuccess": false,
+    "channels": []
+  },
+  "metadata": {
+    "category": "engagement",
+    "priority": "medium"
+  }
+}

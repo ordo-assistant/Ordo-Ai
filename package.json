@@ -11,8 +11,16 @@
     "test": "tsx src/test-scoring.ts",
     "test:watch": "tsx watch src/test-scoring.ts",
     "example": "tsx examples/analyze-token.ts",
+    "example:heartbeat": "tsx examples/heartbeat-demo.ts",
     "agent": "tsx src/cli-agent.ts",
     "agent:demo": "tsx examples/react-agent-demo.ts",
+    "openclaw": "tsx src/openclaw/index.ts",
+    "openclaw:dev": "tsx watch src/openclaw/index.ts",
+    "chat": "tsx src/chat-interface.ts",
+    "knowledge:load": "tsx src/load-knowledge.ts",
+    "heartbeat": "tsx src/heartbeat-cli.ts",
+    "heartbeat:watch": "tsx src/heartbeat-runner.ts",
+    "verify": "tsx src/verify-setup.ts",
     "lint": "eslint src --ext .ts"
   },
   "keywords": [
@@ -26,7 +34,10 @@
   "author": "ordo-seeker-assistant",
   "license": "MIT",
   "dependencies": {
+    "@langchain/core": "^1.1.18",
+    "@langchain/openai": "^1.2.4",
     "@solana/web3.js": "^1.87.6",
+    "@supabase/supabase-js": "^2.93.3",
     "axios": "^1.6.5",
     "dotenv": "^16.3.1",
     "openai": "^6.17.0"

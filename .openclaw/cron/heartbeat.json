@@ -1,0 +1,21 @@
+{
+  "name": "Hackathon Heartbeat",
+  "description": "Periodic sync with Colosseum Agent Hackathon - checks forum, leaderboard, and agent status",
+  "schedule": "*/30 * * * *",
+  "timezone": "America/New_York",
+  "enabled": true,
+  "command": {
+    "type": "agent_task",
+    "prompt": "Run the hackathon heartbeat check. Review forum activity, check for replies to our posts, monitor the leaderboard, and identify any action items. If there are interesting discussions or opportunities to engage, let me know."
+  },
+  "notifications": {
+    "onError": true,
+    "onSuccess": false,
+    "channels": ["slack"]
+  },
+  "metadata": {
+    "hackathon": "colosseum-agent-hackathon",
+    "priority": "high",
+    "category": "engagement"
+  }
+}
