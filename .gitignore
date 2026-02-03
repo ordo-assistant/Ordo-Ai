@@ -1,0 +1,23 @@
+# Environment files with secrets
+.env
+.env.*
+.env.hackathon
+
+# API keys and credentials
+*.key
+*.pem
+secrets/
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
